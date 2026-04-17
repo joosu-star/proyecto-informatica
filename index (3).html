@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xilitla — El Jardín Surrealista de México</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVEGACIÓN ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Xili<em>tla</em></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#atractivos">Atractivos</a></li>
+        <li><a href="#como-llegar">Cómo Llegar</a></li>
+      </ul>
+      <button class="nav-cta" onclick="smoothScroll('atractivos')">Explorar</button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">✦ San Luis Potosí · México ✦</div>
+      <h1 class="hero-title">
+        El Jardín<br />
+        <em>Surrealista</em><br />
+        de México
+      </h1>
+      <p class="hero-desc">
+        Descubre Xilitla, donde la selva húmeda se transforma en arte monumental. Cascadas, pozas cristalinas y esculturas gigantescas te esperan en el corazón de la Huasteca Potosina.
+      </p>
+      <div class="hero-btns">
+        <button class="btn-gold" onclick="smoothScroll('atractivos')">Descubrir más</button>
+        <button class="btn-outline" onclick="smoothScroll('galeria')">Ver galería</button>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Desliza</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== BARRA DE DATOS ===== -->
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-num">1,100</span>
+      <span class="stat-label">metros de altitud</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">400+</span>
+      <span class="stat-label">especies de plantas</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">80</span>
+      <span class="stat-label">esculturas en Las Pozas</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">∞</span>
+      <span class="stat-label">aventuras posibles</span>
+    </div>
+  </div>
+
+  <!-- ===== ATRACTIVOS ===== -->
+  <section id="atractivos" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">✦ Qué visitar ✦</span>
+        <h2 class="section-title">Atractivos Principales</h2>
+        <p class="section-desc">Cada rincón de Xilitla guarda una historia, un misterio o una maravilla natural que no encontrarás en ningún otro lugar del mundo.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card reveal">
+          <div class="card-visual verde">
+            <span class="card-icon">🌿</span>
+            <div class="card-overlay-tag">Arte &amp; Naturaleza</div>
+          </div>
+          <div class="card-body">
+            <h3>Las Pozas de Edward James</h3>
+            <p>El jardín surrealista más extraordinario del mundo, creado por el excéntrico poeta inglés Edward James entre la selva tropical. Esculturas colosales emergen de la vegetación viva.</p>
+            <div class="card-detail">
+              <span>📍 A 2 km del centro</span>
+              <span>⏰ 9am – 5pm</span>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-visual azul">
+            <span class="card-icon">💧</span>
+            <div class="card-overlay-tag">Aventura</div>
+          </div>
+          <div class="card-body">
+            <h3>Cascada El Salto</h3>
+            <p>Una imponente cascada de 80 metros que cae entre paredes de roca viva. La niebla permanente y el rugido del agua crean una atmósfera mágica e irrepetible.</p>
+            <div class="card-detail">
+              <span>📍 Sierra circundante</span>
+              <span>🥾 Senderismo</span>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-visual cafe">
+            <span class="card-icon">🦇</span>
+            <div class="card-overlay-tag">Espeleología</div>
+          </div>
+          <div class="card-body">
+            <h3>Sótano de las Golondrinas</h3>
+            <p>Una de las cuevas con foso más profundo del mundo. Al amanecer, miles de aves salen en espiral creando uno de los espectáculos naturales más sorprendentes de México.</p>
+            <div class="card-detail">
+              <span>📍 Aquismón, SLP</span>
+              <span>⏰ Mejor al amanecer</span>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-visual musgo">
+            <span class="card-icon">⛪</span>
+            <div class="card-overlay-tag">Historia</div>
+          </div>
+          <div class="card-body">
+            <h3>Ex Convento Agustino</h3>
+            <p>Joya arquitectónica del siglo XVI levantada por los frailes agustinos. Sus muros de cantera rosa guardan siglos de historia y fe en el corazón del Pueblo Mágico.</p>
+            <div class="card-detail">
+              <span>📍 Centro de Xilitla</span>
+              <span>🏛️ Siglo XVI</span>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-visual agua">
+            <span class="card-icon">🏊</span>
+            <div class="card-overlay-tag">Ecoturismo</div>
+          </div>
+          <div class="card-body">
+            <h3>Río Moctezuma</h3>
+            <p>Aguas cristalinas perfectas para rafting, kayak y pozas naturales. La biodiversidad acuática del río es única en la Huasteca Potosina y refugio de especies endémicas.</p>
+            <div class="card-detail">
+              <span>📍 Valle del río</span>
+              <span>🛶 Todo el año</span>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-visual piedra">
+            <span class="card-icon">🌄</span>
+            <div class="card-overlay-tag">Cultura</div>
+          </div>
+          <div class="card-body">
+            <h3>Pueblo Mágico</h3>
+            <p>Calles empedradas, fachadas coloridas y mercados artesanales que reflejan la riqueza Teenek (Huasteca). No olvides probar el zacahuil y los bocoles del mercado local.</p>
+            <div class="card-detail">
+              <span>📍 Centro urbano</span>
+              <span>🎨 Todo el año</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERÍA ===== -->
+  <section id="galeria" class="section section-deeper">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">✦ Imágenes ✦</span>
+        <h2 class="section-title">Galería Visual</h2>
+        <p class="section-desc">Un vistazo a los paisajes y maravillas más icónicos de Xilitla, el paraíso escondido de la Sierra Huasteca.</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item featured g1">
+          <span class="gallery-emoji">🌿</span>
+          <div class="gallery-label">Las Pozas — Jardín Surrealista de Edward James</div>
+        </div>
+        <div class="gallery-item tall g2">
+          <span class="gallery-emoji">💧</span>
+          <div class="gallery-label">Cascada El Salto — 80 metros de caída libre</div>
+        </div>
+        <div class="gallery-item g3">
+          <span class="gallery-emoji">🦇</span>
+          <div class="gallery-label">Sótano de las Golondrinas al amanecer</div>
+        </div>
+        <div class="gallery-item g4">
+          <span class="gallery-emoji">⛪</span>
+          <div class="gallery-label">Ex Convento Agustino del siglo XVI</div>
+        </div>
+        <div class="gallery-item featured g5">
+          <span class="gallery-emoji">🏊</span>
+          <div class="gallery-label">Pozas naturales del Río Moctezuma</div>
+        </div>
+        <div class="gallery-item g6">
+          <span class="gallery-emoji">🌄</span>
+          <div class="gallery-label">Vista panorámica del Pueblo Mágico</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CÓMO LLEGAR ===== -->
+  <section id="como-llegar" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">✦ Viaje ✦</span>
+        <h2 class="section-title">Cómo Llegar a Xilitla</h2>
+        <p class="section-desc">Xilitla se ubica en el municipio de <strong>Xilitla, San Luis Potosí</strong>, en plena Sierra Gorda. Hay varias formas de llegar.</p>
+      </div>
+
+      <div class="route-grid reveal">
+        <div class="route-card">
+          <div class="route-icon">🚗</div>
+          <h3>En Automóvil</h3>
+          <p>Desde la ciudad de San Luis Potosí toma la carretera 85 hacia Ciudad Valles y luego la desviación a Xilitla. Aproximadamente 5–6 horas por carretera federal.</p>
+        </div>
+        <div class="route-card">
+          <div class="route-icon">🚌</div>
+          <h3>En Autobús</h3>
+          <p>Desde la Central Camionera de SLP salen autobuses directos. También puedes viajar a Ciudad Valles y tomar transporte local a Xilitla. Duración aprox. 6 horas.</p>
+        </div>
+        <div class="route-card">
+          <div class="route-icon">✈️</div>
+          <h3>Aéreo + Transporte</h3>
+          <p>Vuela al aeropuerto de Tampico o San Luis Potosí, luego autobús a Ciudad Valles y transporte local a Xilitla. La opción más rápida si viajas desde lejos.</p>
+        </div>
+      </div>
+
+      <!-- TABS -->
+      <div class="tabs-section reveal">
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-tab="hospedaje">🏨 Hospedaje</button>
+          <button class="tab-btn" data-tab="gastronomia">🍽️ Gastronomía</button>
+          <button class="tab-btn" data-tab="clima">🌤️ Clima</button>
+          <button class="tab-btn" data-tab="tips">💡 Tips</button>
+        </div>
+
+        <div class="tab-panel active" id="hospedaje">
+          <ul class="info-list">
+            <li><span class="li-icon">🏨</span><div><strong>Posada El Castillo</strong> — La icónica mansión de Edward James convertida en hotel boutique. Dormir aquí es una experiencia surrealista en sí misma.</div></li>
+            <li><span class="li-icon">🌿</span><div><strong>Cabañas Ecoturísticas</strong> — Varios establecimientos ofrecen cabañas en medio de la selva con vistas al valle. Ideal para conectar con la naturaleza.</div></li>
+            <li><span class="li-icon">🏡</span><div><strong>Hoteles del Centro</strong> — Opciones económicas y cómodas en el centro del pueblo, cerca de restaurantes y el mercado local.</div></li>
+            <li><span class="li-icon">⛺</span><div><strong>Glamping</strong> — Nuevas opciones de glamping en los alrededores, perfectas para los amantes de la aventura sin sacrificar comodidad.</div></li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" id="gastronomia">
+          <ul class="info-list">
+            <li><span class="li-icon">🌽</span><div><strong>Zacahuil</strong> — El tamal gigante huasteco, envuelto en hoja de plátano y cocido en horno de leña. El plato más emblemático de la región.</div></li>
+            <li><span class="li-icon">🫔</span><div><strong>Bocoles</strong> — Gorditas de maíz con frijol, chicharrón o queso. Sencillas y deliciosas, se venden en los mercados locales.</div></li>
+            <li><span class="li-icon">☕</span><div><strong>Café Xilitla</strong> — La región produce café de altura de excelente calidad. No salgas sin comprar café local para llevar a casa.</div></li>
+            <li><span class="li-icon">🍬</span><div><strong>Dulces Típicos</strong> — Cocada, jamoncillo y cajeta artesanal son imperdibles en el mercado del pueblo.</div></li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" id="clima">
+          <ul class="info-list">
+            <li><span class="li-icon">☀️</span><div><strong>Temporada Seca (Nov–Abr)</strong> — Clima más fresco y seco, ideal para caminatas. Temperaturas de 15–25 °C. La mejor época para visitar Las Pozas.</div></li>
+            <li><span class="li-icon">🌧️</span><div><strong>Temporada de Lluvias (May–Oct)</strong> — Las cascadas están en su máximo esplendor. El verde es intenso y el paisaje, mágico. Lleva impermeable.</div></li>
+            <li><span class="li-icon">🌡️</span><div><strong>Temperatura Promedio</strong> — Entre 18 °C y 28 °C durante todo el año. El clima es subtropical húmedo, siempre verde y agradable.</div></li>
+            <li><span class="li-icon">👕</span><div><strong>Qué llevar</strong> — Ropa ligera, zapatos de senderismo, repelente de insectos, protector solar y una chamarra para las noches.</div></li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" id="tips">
+          <ul class="info-list">
+            <li><span class="li-icon">📸</span><div><strong>Hora dorada fotográfica</strong> — Las Pozas son más fotogénicas al amanecer. Llega a las 7am para evitar multitudes y capturar la luz perfecta.</div></li>
+            <li><span class="li-icon">💰</span><div><strong>Presupuesto</strong> — La entrada a Las Pozas tiene un costo. Lleva efectivo; muchos establecimientos locales no aceptan tarjeta.</div></li>
+            <li><span class="li-icon">📶</span><div><strong>Conectividad</strong> — La señal de celular puede ser limitada en zonas boscosas. Descarga mapas offline antes de llegar.</div></li>
+            <li><span class="li-icon">🌱</span><div><strong>Turismo responsable</strong> — No arranques plantas ni dejes basura. Xilitla es un ecosistema único que merece cuidado y respeto.</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid container">
+      <div class="footer-col">
+        <div class="footer-logo">✦ Xilitla Mágico</div>
+        <p>Proyecto escolar de turismo digital. Municipio de Xilitla, San Luis Potosí, México.</p>
+        <div class="social-links">
+          <a class="social-link" href="#" title="Instagram">📷</a>
+          <a class="social-link" href="#" title="Facebook">💬</a>
+          <a class="social-link" href="#" title="YouTube">▶️</a>
+          <a class="social-link" href="#" title="TikTok">🎵</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#atractivos">Atractivos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#como-llegar">Cómo Llegar</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ubicación</h4>
+        <p>Municipio de Xilitla</p>
+        <p>Sierra Gorda, San Luis Potosí</p>
+        <p>Huasteca Potosina, México</p>
+        <p class="coords">21°23'N — 98°59'O</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="mailto:xilitlamagico@escuela.edu.mx">xilitlamagico@escuela.edu.mx</a>
+        <a href="#">@XilitlaMagico</a>
+        <a href="#">fb.com/XilitlaMagico</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Xilitla Mágico · Proyecto Escolar · San Luis Potosí, México · Hecho con 💛 por la Huasteca</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
