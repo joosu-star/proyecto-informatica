@@ -467,12 +467,29 @@ strong {
   overflow: hidden;
 }
 
-.card-visual.verde  { background: linear-gradient(135deg, #0d3b22, #1a7a42); }
-.card-visual.azul   { background: linear-gradient(135deg, #0d1f40, #1a3a7a); }
-.card-visual.cafe   { background: linear-gradient(135deg, #2e1a0d, #6b3e1a); }
-.card-visual.musgo  { background: linear-gradient(135deg, #1a2b0d, #3f681e); }
-.card-visual.agua   { background: linear-gradient(135deg, #0d2e2e, #1a6e6e); }
-.card-visual.piedra { background: linear-gradient(135deg, #1e1e1e, #3c3c3c); }
+.card-visual.verde {
+  background: url('img/las-pozas.jpg') center/cover no-repeat;
+}
+
+.card-visual.azul {
+  background: url('img/cascada-el-salto.jpg') center/cover no-repeat;
+}
+
+.card-visual.cafe {
+  background: url('img/sotano-golondrinas.jpg') center/cover no-repeat;
+}
+
+.card-visual.musgo {
+  background: url('img/convento-xilitla.jpg') center/cover no-repeat;
+}
+
+.card-visual.agua {
+  background: url('img/rio-moctezuma.jpg') center/cover no-repeat;
+}
+
+.card-visual.piedra {
+  background: url('img/pueblo-xilitla.jpg') center/cover no-repeat;
+}
 
 .card-icon {
   font-size: 5rem;
@@ -560,12 +577,12 @@ strong {
 .gallery-item.featured { grid-column: span 2; min-height: 310px; }
 .gallery-item.tall     { grid-row: span 2; }
 
-.g1 { background: linear-gradient(135deg, #0d4a2a, #1a9a5c); }
-.g2 { background: linear-gradient(135deg, #1a2a5a, #3a5aaa); }
-.g3 { background: linear-gradient(135deg, #4a2a0d, #9a5a1a); }
-.g4 { background: linear-gradient(135deg, #2a0d4a, #6a1a9a); }
-.g5 { background: linear-gradient(135deg, #0d4a4a, #1a9a9a); }
-.g6 { background: linear-gradient(135deg, #4a4a0d, #9a9a1a); }
+.g1 { background: url('img/pozas1.jpg') center/cover no-repeat; }
+.g2 { background: url('img/cascada2.jpg') center/cover no-repeat; }
+.g3 { background: url('img/golondrinas.jpg') center/cover no-repeat; }
+.g4 { background: url('img/convento2.jpg') center/cover no-repeat; }
+.g5 { background: url('img/rio2.jpg') center/cover no-repeat; }
+.g6 { background: url('img/pueblo2.jpg') center/cover no-repeat; }
 
 .gallery-emoji {
   font-size: 4rem;
